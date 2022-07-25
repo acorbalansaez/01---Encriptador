@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Cifrador</title>
+</head>
+
+
+<body class="azul">
+
+    <section id="contenedor-header">
+
+        <header id="header">
+            <img id="titulo" class="animate__animated animate__tada" src="imgs/titulo.png" alt="titulo">
+            <img id="titulo-mobile" class="animate__animated animate__tada" src="imgs/titulo-mobile.png"
+                alt="titulo-mobile">
+        </header>
+
+        <nav id="menu-contenedor">
+            <ul id="menu">
+                <li class="temas pos1" id="tema-azul"></li>
+                <li class="temas pos2" id="tema-celeste"></li>
+                <li class="temas pos3" id="tema-rosa"></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section id="contenido">
+
+        <div id="entradaTexto">
+
+            <textarea id="input" name="" id="input" cols="30" rows="10" placeholder="Ingresá un mensaje..."></textarea>
+
+            <div id="aviso">
+                <img src="imgs/aviso.png" alt="">
+                <p id="aviso-texto">solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div id="botones">
+                <button id="btn-cifrar">Cifrar</button>
+                <button id="btn-descifrar">Descifrar</button>
+            </div>
+
+        </div>
+
+        <div id="resultadoSinTexto">
+
+            <h2>No hay mensajes para mostrar</h2>
+            <p>Ingresá el texto que querés cifrar o descifrar</p>
+            <img id="img-resultadoSinTexto" src="imgs/fish.png" alt="">
+
+        </div>
+
+        <div id="resultadoTexto">
+
+            <div id="contenedor">
+
+                <div id="mensajes">
+                </div>
+
+                <div id="botones-contenedor">
+
+                    <div id="alerta-copiado" class="animate__animated animate__fadeIn">
+                        <p>¡Texto copiado!</p>
+                    </div>
+
+                    <div id="botones-dos">
+
+                        <button id="btn-borrar">
+                            <span>
+                                <p>Borrar</p>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BAB9C8"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="4" y1="7" x2="20" y2="7" />
+                                    <line x1="10" y1="11" x2="10" y2="17" />
+                                    <line x1="14" y1="11" x2="14" y2="17" />
+                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                </svg>
+                                <!-- <img src="imgs/borrar.png" alt=""> -->
+                            </span>
+                        </button>
+
+                        <button id="btn-copiar">
+                            <span>
+                                <p>Copiar</p>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy"
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BAB9C8"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <rect x="8" y="8" width="12" height="12" rx="2" />
+                                    <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                                </svg>
+                                <!-- <img src="imgs/copiar.png" alt=""> -->
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer id="footer">
+
+        <div id="iconos-contenedor">
+
+            <a href="https://app.aluracursos.com/user/agustina-lara-cs" target="_blank">
+                <svg id="contacto" class="iconos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#809DF9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/agustina-corbalan-saez-/" target="_blank">
+                <svg id="linkedin" class="iconos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#809DF9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="8" y1="11" x2="8" y2="16" />
+                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                    <line x1="12" y1="16" x2="12" y2="11" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+            </a>
+
+            <a href="https://github.com/acorbalansaez" target="_blank">
+                <svg id="github" class="iconos" xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#809DF9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+
+        </div>
+
+
+        <!-- <p id="footer-texto">Challenge Oracle ONE - Sprint 01 <br> Agustina Corbalán Saez</p> -->
+    </footer>
+
+    <div id="fondo-alerta">
+
+        <div id="alerta">
+            <div id="contenedor-alerta">
+                <img id="cerrar-alerta" src="imgs/close.png" alt="">
+                <div id="contenedor-titulo">
+                    <p id="titulo-alerta">Alerta</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="menu-tema.js"></script>
+    <script src="cartel-alerta.js"></script>
+    <script src="cartel-respuesta.js"></script>
+
+</body>
+
+
+</html>
